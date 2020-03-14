@@ -76,7 +76,7 @@ public class MainAPI {
      * @since 01-03-2020
      */
 
-    public <T extends APIResponse> void newRequest(@NonNull final int method, @NonNull final String url, @Nullable final String json, @NonNull final T callback) {
+    public <T extends APIResponse> void stringRequest(@NonNull final int method, @NonNull final String url, @Nullable final String json, @NonNull final T callback) {
         StringRequest request = new StringRequest(method, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
