@@ -1,7 +1,15 @@
 package ca.alidali.mainapi;
 
-public interface APIResponse {
+import com.android.volley.VolleyError;
 
-    void onSuccess(Object result, int status);
-    void onFailure(Object result, int status);
+/**
+ * All Classes that uses MainAPI <strong>must</strong> implements this interface
+ *
+ * @author Ali Dali
+ * @version 1.0
+ * @since 22-02-2020
+ */
+public interface APIResponse {
+    void onSuccess(Object json, int status, int request);
+    void onFailure(VolleyError error, int status, int request);
 }

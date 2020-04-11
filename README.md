@@ -9,7 +9,7 @@ repositories:
 
 dependencies:
 
-	implementation 'com.github.alidali96:Android4All:v0.1'
+	implementation 'com.github.alidali96:Android4All:v0.3'
 
 ## Some Examples
 
